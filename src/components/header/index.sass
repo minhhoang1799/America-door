@@ -1,0 +1,182 @@
+header
+    border-bottom: 2px solid #a7b0b8
+    &.active
+        position: fixed
+        width: 100%
+        z-index: 999
+        background: #fff
+    .header-wrapper
+        display: flex
+        justify-content: space-between
+        background: #fff
+        padding: 1rem 0
+        position: relative
+        .nav
+            display: flex
+            align-items: center
+            ul
+                display: flex
+                li
+                    font-size: 1.6rem
+                    text-transform: uppercase
+                    font-weight: 500
+                    margin: 0 1.5rem
+                    &:first-child
+                        margin-left: 0
+                    &:last-child
+                        margin-right: 0
+            &.active
+                display: none
+        .box
+            display: flex
+            opacity: .7
+            .main-search
+                margin-right: .725rem
+                display: flex
+                align-items: center
+                em
+                    cursor: pointer
+                .searchbox
+                    display: none
+                    position: absolute
+                    width: 50%
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%,-50%)
+                    input
+                        width: 100%
+                        border-radius: 3rem
+                        border: 2px solid #a7b0b8
+                        padding: .5rem 1rem
+                        position: relative
+                        outline: none
+                    button
+                        border: none
+                        background: none
+                        outline: none
+                        position: absolute
+                        top: 50%
+                        transform: translateY(-50%)
+                        right: 5%
+                &.active
+                    .searchbox
+                        display: block
+            .language
+                margin-left: .725rem
+                display: flex
+                align-items: center
+                select
+                    border: none
+                    outline: none
+                    appearance: none
+                    cursor: pointer
+                em
+                    margin-left: .5rem
+            .button-toggle
+                display: none
+                .button
+                    width: 3rem
+                    height: 2px
+                    background: #000
+                    position: relative
+                    transition: .7s
+                    &::after
+                        content: ''
+                        position: absolute
+                        bottom: 1rem
+                        width: 3rem
+                        height: 2px
+                        background: #000
+                        transition: .4s
+                    &::before
+                        content: ''
+                        position: absolute
+                        top: 1rem
+                        width: 3rem
+                        height: 2px
+                        background: #000
+                        transition: .4s
+                &.active
+                    .button
+                        background: transparent
+                        transition: .2s
+                        &::after
+                            bottom: 0
+                            transition: .3s
+                            -webkit-transform: rotate(135deg)
+                            -moz-transform: rotate(135deg)
+                            -o-transform: rotate(135deg)
+                            transform: rotate(135deg)
+                        &::before
+                            top: 0
+                            transition: .4s
+                            -webkit-transform: rotate(-135deg)
+                            -moz-transform: rotate(-135deg)
+                            -o-transform: rotate(-135deg)
+                            transform: rotate(-135deg)
+    .nav-mobile
+        width: 40rem
+        background: #f1f1f1
+        height: calc(100vh - 74px)
+        position: fixed
+        bottom: 0
+        left: -40rem
+        transition: .7s
+        z-index: 999
+        padding: 1rem
+    .back-drop
+        display: none
+        width: 100%
+        height: calc(100vh - 74px)
+        position: fixed
+        bottom: 0
+        left: 0
+        background: rgba(0, 0, 0, .7)
+        z-index: 1
+        opacity: 0
+        &.active
+            display: block
+            opacity: 1
+@media (max-width: 1200px)
+    header
+        .header-wrapper
+            display: flex
+            align-items: center
+            .logo
+            .nav
+                display: none
+            .box 
+                .button-toggle
+                    display: block
+                    padding-top: 1rem
+                    padding-left: 2rem
+        .nav-mobile
+            &.active
+                left: 0
+                transition: .7s
+                .nav
+                    display: flex
+                    justify-content: center
+                    margin-top: 20%
+                    ul
+                        li
+                            font-size: 1.6rem
+                            text-transform: uppercase
+                            font-weight: 500
+                            margin: 3rem 0
+@media (max-width: 767px)
+    header
+        .header-wrapper
+            .logo
+                img
+                    max-width: 80%
+        .nav-mobile
+            height: calc(100% - 7rem)
+        .back-drop
+            height: calc(100% - 7rem)
+@media (max-width: 575px)
+    header
+        .header-wrapper
+            .logo
+                img
+                    max-width: 60%

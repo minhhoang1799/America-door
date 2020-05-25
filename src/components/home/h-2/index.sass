@@ -1,0 +1,78 @@
+.product-hot
+    padding: 6rem 0
+    .title
+        text-align: center
+        font-weight: 700
+        font-size: 3rem
+        margin-bottom: 4rem
+    .container
+        position: relative
+        z-index: 1
+        .swiper-slide
+            a
+                figure
+                    padding: 3rem 0
+                    position: relative
+                    .img
+                        text-align: center
+                    figcaption
+                        .content
+                            text-align: center
+                            padding: 2.5rem 2rem
+                            p
+                                font-size: 1.4rem
+                                &:nth-child(1)
+                                    font-size: 1.6rem
+                                    font-weight: 700
+                                &:nth-child(3)
+                                    color: #ed1c24
+                            +button
+                            .sale
+                                position: absolute
+                                top: 5%
+                                right: 5%
+                                width: 4.3rem
+                                height: 4.3rem
+                                border-radius: 50%
+                                background: #ed1c24
+                                color: #ffffff
+                                display: flex
+                                align-items: center
+                                justify-content: center
+                                p
+                                    font-size: 1.2rem
+                &:hover
+                    figure
+                        background: #f8f8f8
+                        figcaption
+                            +button-hover
+    .swiper-prev
+        position: absolute
+        top: 50%
+        left: -5%
+        z-index: 2
+        outline: none
+        width: 4.4rem
+        height: 4.4rem
+        background: #f8f8f8
+        display: flex
+        align-items: center
+        justify-content: center
+        em
+            font-size: 1.8rem
+            color: #4d4d4d
+    .swiper-next
+        position: absolute
+        top: 50%
+        right: -5%
+        z-index: 2
+        outline: none
+        width: 4.4rem
+        height: 4.4rem
+        background: #f8f8f8
+        display: flex
+        align-items: center
+        justify-content: center
+        em
+            font-size: 1.8rem
+            color: #4d4d4d

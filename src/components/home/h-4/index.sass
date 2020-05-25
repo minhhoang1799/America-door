@@ -1,0 +1,83 @@
+.map
+    margin-top: 6rem
+    .map-wrapper
+        position: relative
+        iframe
+            width: 100%
+            height: 50rem
+            filter: grayscale(100%)
+        .searhbox
+            width: 60rem
+            height: 24rem
+            background: rgba(101, 92, 89, 0.85)
+            padding: 1rem
+            position: absolute
+            left:  50%
+            transform: translateX(-50%)
+            top: 13rem
+            .content
+                display: flex
+                align-items: center
+                flex-direction: column
+                border: 1px solid #fff
+                padding: 5rem 3rem 6.5rem 3rem
+                color: #fff
+                p
+                    font-size: 2.3rem
+                    font-weight: 700
+                .button
+                    margin-top: 3rem
+                    cursor: pointer
+                    button
+                        text-transform: uppercase
+                        background: #e0232a
+                        color: #fff
+                        border: 1px solid #e0232a
+                        padding: 1rem 3rem
+                        font-size: 1.2rem
+                        outline: none
+                        em
+                            margin-left: 1rem
+.home-icon
+    margin: 6rem 0
+    .title
+        h2
+            font-size: 3rem
+            font-weight: 700
+            text-align: center
+    .box-icon
+        margin-top: 3rem
+        display: flex
+        justify-content: space-around
+        padding: 0 8.33%
+        .item
+            border: 1px solid #ccc
+            .img
+                overflow: hidden
+                width: 100%
+                height: 100%
+                padding: 3rem 8rem
+                img
+                    width: 100%
+                    height: 100%
+                    object-fit: contain
+            &:hover
+                .img
+                    img
+                        transform: scale(1.1)
+                        transition: .3s
+@media (max-width: 1024px)
+    .home-icon
+        .box-icon
+            padding: 0
+            .item
+                margin-top: 2rem
+@media (max-width: 767px)
+    .home-icon
+        .box-icon
+            .item
+                text-align: center
+                .img
+                    padding: 0
+                    img
+                        width: 50%

@@ -1,0 +1,120 @@
+.project-wrapper
+    .title
+        h3
+            font-size: 3rem
+            font-weight: 700
+            margin-bottom: 1.5rem
+        p
+            padding: 0 7.5rem 0 3rem
+            margin: 1.5rem 0
+            font-size: 1.4rem
+            color: #666
+        a
+            .button
+                padding-left: 3rem
+                background: #fff
+                margin-top: 3rem
+                button
+                    background: #fff
+                    border: 1px solid
+                    padding: .5rem 1rem
+                .lnr
+                    margin-left: 1rem
+            &:hover
+                +button-hover
+    .col-lg-6
+        margin-bottom: 3rem
+    .swiper-container
+        height: 100%
+        .swiper-wrapper
+            .swiper-slide
+                figure
+                    .img
+                        width: 100%
+                        height: 100%
+                        position: relative
+                        img
+                            width: 100%
+                    figcaption
+                        .content
+                            padding-left: 3rem
+                            position: absolute
+                            bottom: 5%
+                            left: 0
+                            color: #fff
+                            padding: 2.5rem
+                            h3
+                                text-transform: uppercase
+                                font-weight: 600
+                                font-size: 2.4rem
+                                position: relative
+                                &::before
+                                    content: ''
+                                    position: absolute
+                                    width: 1.5rem
+                                    height: 1px
+                                    background: #ffffff
+                                    left: -13%
+                                    top: 50%
+                            p
+                                font-size: 1.8rem
+    .swiper-prev
+        position: absolute
+        top: 50%
+        left: 1.5%
+        transform: translateY(-50%)
+        z-index: 1
+        opacity: .7
+        .button
+            button
+                width: 4.4rem
+                height: 4.4rem
+                background: #ff0000
+                border: 1px solid #ff0000
+                outline: none
+                em
+                    color: #fff
+                    font-size: 1.8rem
+    .swiper-next
+        position: absolute
+        top: 50%
+        right: 1.5%
+        transform: translateY(-50%)
+        z-index: 1
+        opacity: .7
+        .button
+            button
+                width: 4.4rem
+                height: 4.4rem
+                background: #ff0000
+                border: 1px solid #ff0000
+                outline: none
+                em
+                    color: #fff
+                    font-size: 1.8rem
+    .item
+        a
+            figure
+                .img
+                    width: 100%
+                    img
+                        width: 100%
+                figcaption
+                    .content
+                        padding-left: 3rem
+                        margin-top: 1.5rem
+                        position: relative
+                        h3
+                            font-size: 1.8rem
+                            font-weight: 700
+                            text-transform: uppercase
+                        p
+                            font-size: 1.6rem
+                        &::before
+                            content: ''
+                            width: 2rem
+                            height: 2px
+                            background: #999999
+                            position: absolute
+                            left: 0
+                            top: 25%

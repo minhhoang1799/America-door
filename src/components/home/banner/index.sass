@@ -1,0 +1,96 @@
+.home-banner
+    .swiper-container
+        .swiper-wrapper
+            .swiper-slide,.slide-1
+                position: relative
+                figure
+                    .img
+                    figcaption
+                        position: absolute
+                        width: 100%
+                        top: 50%
+                        left: 50%
+                        transform: translateY(-50%)
+                        .content
+                            color: #fff
+                            h2
+                                font-size: 4.8rem
+                                font-weight: 700
+                                text-transform: uppercase
+                            p
+                                font-size: 2.4rem
+                        .button
+                            display: flex
+                            align-items: center
+                            padding-top: 3.5rem
+                            button
+                                border: 1px solid #ed1c24
+                                background: #ed1c24 
+                                padding: 1rem 2rem 1rem 3rem
+                                font-size: 1.4rem
+                                color: #fff
+                                position: relative
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                text-transform: uppercase
+                                em
+                                    padding-left: 4px     
+            .slide-2,.slide-3
+                figure
+                    figcaption
+                        top: 60%
+                        left: 0
+                        .content
+                            text-align: center
+                        .button
+                            justify-content: center                
+    .swiper-pagination
+        position: absolute
+        left: 50%
+        bottom: 0
+        transform: translateX(-50%)
+        .swiper-pagination-bullet-active
+            background: #ff0000 !important
+        .swiper-pagination-bullet
+            border-radius: initial
+            background: #fff
+            margin: 0 .5rem
+            outline: none
+            opacity: 1
+@media (max-width: 1200px)
+    .home-banner
+        .swiper-container
+            .swiper-wrapper
+                .swiper-slide
+                    figure
+                        figcaption
+                            .content
+                                h2
+                                    font-size: 3rem
+@media (max-width: 767px)
+    .home-banner
+        .swiper-container
+            .swiper-wrapper
+                .swiper-slide
+                    figure
+                        figcaption
+                            .button
+                                padding-top: 1rem
+                                button
+                                    padding: .5rem 1rem .5rem 2rem
+@media (max-width: 575px)
+    .home-banner
+        .swiper-container
+            .swiper-wrapper
+                .swiper-slide
+                    figure
+                        figcaption
+                            .content
+                                h2
+                                    font-size: 2rem
+                                p
+                                    font-size: 1.5rem
+            .swiper-pagination
+                display: none
+
