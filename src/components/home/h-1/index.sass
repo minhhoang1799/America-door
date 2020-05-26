@@ -28,31 +28,44 @@
     .box-button
         padding-left: 3rem
         display: flex
-        .left
-            color: #666
-            font-size: 1.4rem
-            font-weight: 600
-            background: #f7f7f7
-            border: 1px solid #000000
-            padding: 1rem 2rem
-            margin-right: .725rem
-            text-transform: uppercase
-            em
-                padding-left: 1rem
-        .right
-            border: 1px solid #ed1c24
-            background: #ed1c24 
-            padding: 1rem 2rem 1rem 3rem
-            font-size: 1.4rem
-            color: #fff
-            position: relative
-            display: flex
-            justify-content: center
-            align-items: center
-            text-transform: uppercase
-            margin-left: .725rem
-            em
-                padding-left: 4px 
+        a
+            .left
+                margin-right: .5rem
+                border: 1px solid #000
+                background: #f7f7f7 
+                padding: 1rem 2rem 1rem 3rem
+                font-size: 1.4rem
+                color: #333
+                position: relative
+                display: flex
+                justify-content: center
+                align-items: center
+                text-transform: uppercase
+                em
+                    padding-left: 1rem
+                &:hover
+                    border-color: #ed1c24
+                    background: #ed1c24
+                    color: #fff
+        a
+            .right
+                margin-left: .5rem
+                border: 1px solid #000
+                background: #f7f7f7 
+                padding: 1rem 2rem 1rem 3rem
+                font-size: 1.4rem
+                color: #333
+                position: relative
+                display: flex
+                justify-content: center
+                align-items: center
+                text-transform: uppercase
+                em
+                    padding-left: 4px
+                &:hover
+                    border-color: #ed1c24
+                    background: #ed1c24
+                    color: #fff
     .list
         display: flex
         .item
@@ -83,6 +96,10 @@
         .list
             .item
                 padding: 0 .5rem
+    @media (max-width: 1024px)
+        margin-top: 6rem
+    @media (max-width: 767px)
+        margin-top: 4rem
 .list-product
     .product-wrapper
         .wrapper-left

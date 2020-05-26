@@ -55,6 +55,7 @@ $(document).ready(function() {
     togglenav()
     swiperHome()
     swiperHomeProject()
+    hoverLink()
 
 })
 
@@ -192,4 +193,13 @@ function swiperHomeProject(){
         },
 	})
 
+}
+
+
+
+function hoverLink(){
+    $('.project-wrapper .swiper-container .swiper-slide figure').hover(function(){
+        $('.project-wrapper .swiper-next').toggleClass('active')
+        $('.project-wrapper .swiper-prev').toggleClass('active')
+    })
 }

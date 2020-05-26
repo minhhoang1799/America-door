@@ -60,6 +60,7 @@
                                 font-size: 1.8rem
     .swiper-prev
         position: absolute
+        display: none
         top: 50%
         left: 1.5%
         transform: translateY(-50%)
@@ -75,8 +76,11 @@
                 em
                     color: #fff
                     font-size: 1.8rem
+        &.active
+            display: block
     .swiper-next
         position: absolute
+        display: none
         top: 50%
         right: 1.5%
         transform: translateY(-50%)
@@ -92,6 +96,8 @@
                 em
                     color: #fff
                     font-size: 1.8rem
+        &.active
+            display: block
     .item
         a
             figure
@@ -118,3 +124,10 @@
                             position: absolute
                             left: 0
                             top: 25%
+@media (max-width: 1024px)
+    .project-wrapper
+        .item
+            figure
+                figcaption
+                    .content
+                        margin: 1rem 0
